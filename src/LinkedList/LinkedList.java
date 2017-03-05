@@ -10,10 +10,12 @@ public class LinkedList {
 	public String search(String s) {
 		Node n = head;
 		while (n != null) {
-			System.out.println(n.getData());
+			if(s == null && (n.getData() == null)) {
+				return "Null";
+			}
 			n = n.next;
 		}
-		return s;
+		return "not Found";
 
 	}
 
